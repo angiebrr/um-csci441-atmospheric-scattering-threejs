@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<style>
+			body 
+			{
+				font-family: Monospace;
+				background-color: #F5F5F5;
+				margin: 0px;
+				overflow: hidden;
+			}
+		</style>
+		<script src="js/lib/jquery-1.8.3.min.js"></script>
+		<script src="js/lib/three.min.js"></script>
+		<script src="js/lib/Detector.js"></script>
+		<script src="js/lib/Coordinates.js"></script>
+		<script src="js/lib/OrbitAndPanControls.js"></script>
+		<script src="js/lib/TrackballControls.js"></script>
+		<script src="js/lib/stats.min.js"></script>
+		<script src="js/lib/dat.gui.min.js"></script>
+		<script src="js/lib/tween.min.js"></script>
+		<script src="js/lib/sprintf.js"></script>
+		<script src="js/SkyShader.js"></script>
+	</head>
+	<body>
+		<div id="container">
+		</div>
+		<script>
+			if ( ! Detector.webgl ) 
+				Detector.addGetWebGLMessage();
+		</script>
+		<script src="js/skyScene.js"></script>
+		<script>
+			init();
+			animate();
+		</script>
+	</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<style>
+			body 
+			{
+				font-family: Monospace;
+				background-color: #F5F5F5;
+				margin: 10px;
+			}
+		</style>
+		<script src="../js/lib/jquery-1.8.3.min.js"></script>
+		<script src="../js/lib/three.min.js"></script>
+		<script src="../js/lib/Detector.js"></script>
+		<script src="../js/lib/Coordinates.js"></script>
+		<script src="../js/lib/OrbitAndPanControls.js"></script>
+		<script src="../js/lib/TrackballControls.js"></script>
+		<script src="../js/lib/stats.min.js"></script>
+		<script src="../js/lib/dat.gui.min.js"></script>
+		<script src="../js/lib/tween.min.js"></script>
+		<script src="../js/lib/sprintf.js"></script>
+	</head>
+	<body>
+		<div id="output">
+			<h1>Project 1 Unit Test Results</h1>
+			<p id ="mainParagraph"></p>
+		</div>
+		<div id ="container"></div>
+		<script>
+			if ( ! Detector.webgl ) 
+				Detector.addGetWebGLMessage();
+		</script>
+		<script src="../js/SkyShader.js"></script>
+		<script src="../js/skyScene.js"></script>
+		<script src="UnitTests.js"></script>
+		<script src="Tester.js"></script>
+		<script>
+			// Runs unit tests and appends the output to the main paragraph.
+			$(document).ready(function()
+			{
+				var myUnitTests = new UnitTests();
+				myUnitTests.run();
+				$("#mainParagraph").append(myUnitTests.output);
+			});		
+		</script>
+	</body>
+</html>
