@@ -4,6 +4,8 @@ Using vertex and fragment shaders inspired by Joshua Koo, Simon Wallner, and Pre
 
 This was created for a graduate-level computer science graphics course, and so there is a paper in the source (Gross_Angela_Project_1_Paper.pdf) that describes the project process, methods, and underlying theory behind the project. Also, it has a great deal of photos of the end result of the project.
 
+![atmospheric-scattering.PNG](https://bitbucket.org/repo/4Xzoo6/images/3007256918-atmospheric-scattering.PNG)
+
 ### How do I get set up? ###
 
 You need to have a WebGL enabled browser. Additionally, you need to make sure that your browser can read local files. Here are some instructions for Chrome from [this site](http://www.chrome-allow-file-access-from-file.com/):
