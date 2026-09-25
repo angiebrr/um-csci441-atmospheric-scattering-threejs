@@ -15,7 +15,7 @@
 
 A three.js scene with a sky dome and a rising and setting sun, colored by a shader that models Rayleigh and Mie scattering.
 
-Project 1 for CSCI 441, a graduate computer graphics course at the University of Montana, fall 2014. I started by working through Joshua Koo's three.js sky shader, then reworked it by implementing the real-time scattering equations from Preetham, Shirley, and Smits and from Hoffman and Preetham.
+A project for CSCI 441, a graduate computer graphics course at the University of Montana, fall 2014. I started by working through Joshua Koo's three.js sky shader, then reworked it by implementing the real-time scattering equations from Preetham, Shirley, and Smits and from Hoffman and Preetham.
 
 **Tech:** JavaScript, three.js, GLSL, dat.GUI
 
